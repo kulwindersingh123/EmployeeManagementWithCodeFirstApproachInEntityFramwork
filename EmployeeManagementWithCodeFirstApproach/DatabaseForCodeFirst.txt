@@ -1,0 +1,11 @@
+insert into Department values('MCA','yes');
+select*from Department;
+ALTER TABLE EmployeeSkill
+ADD FOREIGN KEY (EmployeeId) REFERENCES Employee(Id);
+insert into EmployeeSkill values(1,1,1);
+drop table EmployeeSkill
+Alter Table EmployeeSkill
+Add Id Int Identity(1, 1);
+select*from EmployeeSkill
+create table EmployeeSkill(Id int primary key ,EmployeeId int foreign key references Employee(Id),SkillId int foreign key references Skill(Id));
+insert EmployeeSkill values(1,1);
